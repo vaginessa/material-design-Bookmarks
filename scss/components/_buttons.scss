@@ -1,0 +1,28 @@
+/**************************  BUTTON COMPONENTS START **************************/
+.menu {
+ position         : relative;
+ left             : 15px;
+ padding          : 23px 12px 12px 12px;
+ border           : 0;
+ background-color : transparent;
+ background-size  : 100% 100%;
+ cursor           : pointer;
+}
+
+.menu.open-button {
+ background-image : url(../../assets/ic_menu_24px.svg);
+}
+
+.menu.close-button {
+ background-image : url(../../assets/ic_close_24px.svg);
+}
+.menu:focus {
+ outline : none;
+}
+
+
+.menu:nth-child(2) {
+ display : none;
+}
+
+/**************************  BUTTON COMPONENTS END **************************/

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Design</title>
+  <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <button class="menu open-button"></button>
+    <button class="menu close-button"></button>
+    <h1 >My books</h1>
+  </header>
+
+  <nav class="mobile-dropdown-menu">
+    <ul>
+      <li> El Pooch </li>
+      <li> The Flight </li>
+      <li> Top 10 Australian Books </li>
+    </ul>
+  </nav>
+
+  <div class="shadow-overlay"></div>
+
+
+  <nav class="desktop-nav">
+    <ul>
+      <li> El Pooch </li>
+      <li> The Flight </li>
+      <li> Top 10 Australian Books </li>
+    </ul>
+  </nav>
+
+
+
+  <div class="content-feed">
+
+    <div class="card card-welcome">
+      <div class="card-content">
+        <section class="card-details">
+          <h2>Welcome back!</h2>
+          <p>It's been a while</p>
+          <p>Read any new books lately?</p>
+        </section>
+        <section class="card-menu">
+          <a href="#">No</a>
+          <a href="#modal">Yes</a>
+        </sectio
+      </div>
+    </div>
+
+  </div>
+  <div id="cardData"></div>
+
+
+  <div class='modal'>
+    <form>
+      <input type="text" placeholder="author" required>
+      <input type="text" placeholder="title" required>
+      <button class="submit-button">Submit</button>
+      <button class="cancel-button">Cancel </button>
+    </form>
+  </div>
+
+
+  <!-- Template for card data-->
+  <script id="card-info" type="text/x-handlebars-template">
+    {{#each cards}}
+
+      {{#ifvalue type}}
+        <div class="card card-small">
+          <img src="{{image}}" alt="{{title}}">
+          <div class="card-content">
+            <section class="card-details">
+              <h2>{{title}}</h2>
+              <h6>By {{author}}</h6>
+            </section>
+            <section class="card-menu">
+              <a href="#" target="_blank">Share</a>
+              <a href="{{sample_url}}"target="_blank">Explore</a>
+            </section>
+          </div>
+        </div>
+
+      {{else}}
+      <div class="card card-big">
+        <!-- <h2>Top 10 Australian beaches</h2> -->
+        <img src="{{image}}" alt="{{title}}">
+        <div class="card-content">
+          <section class="card-details">
+            <h6>{{author}}</h6>
+            <p>White Haven Beach</p>
+            <p>Whitsunday Island, Whitsunday Islands</p>
+          </section>
+          <section class="card-menu">
+            <a href="#">Share</a>
+            <a href="{{sample_url}}" target="_blank">Explore</a>
+          </section>
+        </div>
+      </div>
+      {{/ifvalue}}
+
+    {{/each}}
+  </script>
+
+
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="./js/handlebars.min.js"></script>
+  <script src="js/app.js"></script>
+
+
+</body>
+
+</html>

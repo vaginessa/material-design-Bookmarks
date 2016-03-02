@@ -1,0 +1,130 @@
+/**************************  CARD COMPONENT START **************************/
+
+.card {
+ width                 : 300px;
+ margin-top            : 5px;
+ margin-bottom         : 8px;
+ border-radius         : 2px;
+ box-shadow            : 2px 2px 1px #888888;
+ -webkit-box-shadow    : 2px 2px 1px #888888;
+ background            : #FFF;
+ -webkit-border-radius : 2px;
+}
+
+.card-welcome .card-details {
+ padding-bottom : 35px;
+}
+
+.card-welcome h2 {
+ padding-top    : 5px;
+ padding-bottom : 14px;
+ color          : #EC1662;
+}
+
+.card-welcome .card-details p {
+ padding-bottom : 5px;
+ color          : black;
+ font-size      : 14px;
+}
+
+.card-big h2 {
+ padding-left : 20px;
+ color        : white;
+ font-size    : 20px;
+ font-weight  : 300;
+}
+
+.card-big img {
+ width  : 100%;
+ height : 160px;
+}
+
+.card-big .card-details {
+ padding-top : 10px;
+}
+
+.card-small img {
+ height : 119px;
+ float  : left;
+}
+
+.card-small .card-content {
+ width        : 100%;
+ padding-left : 78px;
+}
+
+.card-details {
+ width         : 100%;
+ padding       : 10px;
+ padding       : 17px;
+ border-bottom : 1px solid #E7E7E7;
+}
+
+.card-small .card-details {
+ height : 74px;
+}
+
+.card-details h2,
+.card-details h6 {
+ text-transform : capitalize;
+ font-size      : 20px;
+}
+
+.card-details h6 {
+ padding-top    : 5px;
+ padding-bottom : 10px;
+ color          : grey;
+ font-size      : 13px;
+}
+
+.card-big .card-details p {
+ font-size : 13px;
+}
+
+.card-menu {
+ height         : 20px;
+ padding-bottom : 45px;
+ padding-left   : 17px;
+}
+
+.card-menu a {
+ display        : inline-block;
+ margin-right   : 20px;
+ padding-top    : 15px;
+ color          : black;
+ text-transform : uppercase;
+ font-size      : 0.8em;
+ font-weight    : 500;
+}
+
+.card-menu a:nth-child(2) {
+ color : #FFB75B;
+}
+
+
+.hidden {
+ visibility : hidden;
+ opacity    : 0;
+}
+
+
+/*Media Queries for Card Component*/
+
+@media (min-width:320px) {
+ .card {
+   margin-right : auto;
+   margin-left  : auto;
+ }
+}
+
+
+@media (min-width:625px) {
+ .card {
+   display   : inline-block;
+   max-width : 20rem;
+ }
+}
+
+
+
+/**************************  CARD COMPONENT End **************************/

@@ -1,0 +1,67 @@
+/**************************  Modal COMPONENT START **************************/
+/*https://www.google.com/search?q=material+design+form&espv=2&biw=2013&bih=1020&tbm=isch&imgil=RwAWMKsEImHZVM%253A%253BjsKozT0_RV9fbM%253Bhttp%25253A%25252F%25252Fmdlwp.com%25252Fdownloads%25252Fmaterial-design-login-form%25252F&source=iu&pf=m&fir=RwAWMKsEImHZVM%253A%252CjsKozT0_RV9fbM%252C_&dpr=0.9&usg=___js5SZCeZ5NElE56Nioj_M8JyyY%3D&ved=0ahUKEwiJ8KTLuLTKAhUP6WMKHXsNCF8QyjcIJQ&ei=fWudVsm9FI_SjwP7mqD4BQ#imgrc=RwAWMKsEImHZVM%3A&usg=___js5SZCeZ5NElE56Nioj_M8JyyY%3D*/
+.modal {
+    z-index       : 10;
+    display       : none;
+    position      : fixed;
+    top           : 50%;
+    left          : 50%;
+    margin-top    : -100px;
+    margin-left   : -150px;
+    border-radius : 2px;
+    outline       : 9999px solid rgba(0,0,0,0.5);
+}
+
+
+.modal form {
+    width         : 300px;
+    height        : 130px;
+    margin        : 0 auto;
+    padding-top   : 5px;
+    border-radius : 2px;
+    box-shadow    : 2px 2px 12px #888888;
+    background    : white;
+}
+
+
+.modal form input {
+    display       : block;
+    width         : 80%;
+    margin        : 0 0 10px 10px;
+    padding       : 10px;
+    border        : none;
+    border-bottom : 1px solid lightgrey;
+    font-family   : 'Roboto';
+}
+
+.modal form input:focus {
+    outline : none;
+}
+
+.modal form button {
+    float          : right;
+    margin-right   : 10px;
+    margin-left    : 10px;
+    padding        : 8px;
+    border         : none;
+    text-transform : uppercase;
+    font-family    : 'Roboto';
+    background     : none;
+}
+
+.modal form .submit-button {
+    color         : white;
+    border-radius : 2px;
+    font-weight   : bold;
+    box-shadow    : 1px 1px 11px #888888;
+    background    : #EE186D;
+}
+
+.modal form .cancel-button {
+    color       : #FFB75B;
+    font-weight : bold;
+}
+
+
+
+/**************************  Modal COMPONENT END **************************/

@@ -1,0 +1,50 @@
+/**************************  BASE STYLES START **************************/
+/* apply a natural box layout model to all elements, but allowing components to change*/
+html {
+ box-sizing : border-box;
+}
+*, *:after, *:before {
+ box-sizing : inherit;
+}
+
+
+.card:after,
+.card:before {
+	content : "";
+	display : table;
+}
+
+.card:after {
+ clear : both;
+}
+
+.card {
+ *zoom : 1;
+}
+
+
+body {
+ position : relative;
+}
+
+body {
+ font-family : 'Roboto', sans-serif;
+ background  : #E3E3E3;
+}
+
+a {
+ text-decoration : none;
+}
+
+//caniuse: http://caniuse.com/#search=column
+.columns {
+ max-width          : 60rem;
+ -webkit-columns    : 2;
+ -moz-columns       : 2;
+ columns            : 2;
+ -webkit-column-gap : 0.5em;
+ -moz-column-gap    : 0.5em;
+ column-gap         : 0.5em;
+}
+
+/**************************  BASE STYLES END **************************/
