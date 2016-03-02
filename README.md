@@ -1,4 +1,5 @@
 
+> A small web (client prototype) bookmarking application written in HTML5,CSS3,Sass & JavaScript. 
 
 ### Product Overview:
 <img src="http://i.imgur.com/hHnzvWV.png"> |<img src="http://i.imgur.com/XnU5iEJ.png">|  <img src="http://i.imgur.com/lxnPL3Q.png">|
